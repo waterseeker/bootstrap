@@ -47,6 +47,7 @@ hr {
   text-align: center;
   color: white;
   text-decoration: none;
+  font-family: 'Poiret One', cursive;
 }
 .navbar .navbar-nav .nav-item:hover,
 .navbar .navbar-nav .nav-item:active {
@@ -159,13 +160,14 @@ button {
   text-decoration: none;
   color: #11480B;
   padding-right: 3em;
+  font-family: 'lab3', Fallback, sans-serif;
 }
-.links a {
+a {
   color: #11480B;
   text-decoration: none;
 }
-.links a:hover,
-.links a:active {
+a:hover,
+a:active {
   color: #90F28D;
 }
 .nav-item {
@@ -185,4 +187,11 @@ button {
 .navbar.center .navbar-inner .nav {
   display: inline-block;
   float: none;
+}
+.navbar {
+  background-color: #11480B;
+}
+@font-face {
+  font-family: 'lab3';
+  src: url('lab3.woff2') format('woff2'), url('lab3.woff') format('woff');
 }

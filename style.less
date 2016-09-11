@@ -65,6 +65,7 @@ hr {
            color: white;
            &:hover, &:active {color:@hover-color;}
            text-decoration: none;
+           font-family: 'Poiret One', cursive;
 
            .nav-link {
                text-decoration: none;
@@ -187,13 +188,15 @@ hr {
     text-decoration: none;
     color: @main-color;
     padding-right: 3em; 
+    font-family: 'lab3', Fallback, sans-serif;
+    }
 
     a {
         color: @main-color;
         text-decoration: none;
         &:hover, &:active {color:@hover-color;}
     }
-}
+
 
 .border(@background-color) when (@background-color = white) {
     border: 1px solid grey;
@@ -223,4 +226,14 @@ hr {
 .navbar.center .navbar-inner .nav {
     display:inline-block;
     float: none;
+}
+
+.navbar {
+    background-color: @main-color;
+}
+
+@font-face {
+  font-family: 'lab3';
+  src:  url('lab3.woff2') format('woff2'),
+        url('lab3.woff') format('woff');
 }
