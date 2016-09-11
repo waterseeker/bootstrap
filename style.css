@@ -41,7 +41,6 @@ h1 {
 }
 h4 {
   margin-bottom: 0em;
-  padding-left: 12em;
 }
 ul {
   text-align: center;
@@ -66,7 +65,15 @@ hr {
   margin-left: 30px;
   text-align: center;
 }
-form {
+.employment-date {
+  margin-top: 0em;
+  color: grey;
+  margin-bottom: 0em;
+}
+.job-description {
+  text-indent: 16px;
+}
+.form {
   margin: 0 auto;
   width: 35%;
   height: 350px;
