@@ -1,33 +1,3 @@
-.header {
-  background-color: #11480B;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  padding-bottom: 25px;
-  top: 0;
-  left: 0;
-  height: auto;
-  position: fixed;
-}
-.header ul {
-  margin-top: 30px;
-  color: white;
-}
-.header ul li {
-  display: inline;
-  padding-left: 30px;
-}
-.header ul li a {
-  text-decoration: none;
-  color: white;
-  background-color: #11480B;
-}
-.header ul li a:hover,
-.header ul li a:active {
-  color: #90F28D;
-}
 .push {
   margin-bottom: 30px;
 }
@@ -38,6 +8,7 @@
 h1 {
   text-align: center;
   padding: 0;
+  text-decoration: none;
 }
 h4 {
   margin-bottom: 0em;
@@ -48,6 +19,44 @@ ul {
 hr {
   padding: 0;
   width: 75%;
+  border-color: #11480B;
+  background-color: #11480B;
+}
+.navbar {
+  background-color: #11480B;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 25px;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+.navbar .navbar-nav {
+  color: white;
+  margin-top: 30px;
+  text-align: center;
+  display: inline-block;
+}
+.navbar .navbar-nav .nav-item {
+  display: inline;
+  padding-left: 30px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.navbar .navbar-nav .nav-item:hover,
+.navbar .navbar-nav .nav-item:active {
+  color: #90F28D;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #11480B;
 }
 .education li {
   list-style: none;
@@ -158,4 +167,22 @@ button {
 .links a:hover,
 .links a:active {
   color: #90F28D;
+}
+.nav-item {
+  color: #11480B;
+  text-decoration: none;
+}
+.nav-item:hover,
+.nav-item:active {
+  color: #90F28D;
+}
+.projects {
+  padding-left: 14em;
+}
+.navbar.center .navbar-inner {
+  text-align: center;
+}
+.navbar.center .navbar-inner .nav {
+  display: inline-block;
+  float: none;
 }

@@ -1,36 +1,5 @@
 @main-color: #11480B;
 @hover-color: #90F28D;
-.header {
-    background-color: @main-color;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 25px;
-    top: 0;
-    left: 0;
-    height: auto;
-    position: fixed;
-
-    ul {
-    margin-top: 30px;
-    color: white;
-
-        li {
-        display: inline;
-        padding-left: 30px;
-
-            a {
-            text-decoration: none;
-            color: white;
-            background-color: @main-color;
-            &:hover, &:active {color:@hover-color;}
-            }
-            
-        }
-    }
-}
 
 .border-radius(@radius: 5px) {
     -webkit-border-radius: @radius;
@@ -50,6 +19,7 @@
 h1 {
     text-align: center;
     padding: 0;
+    text-decoration: none;
 }
 
 
@@ -66,6 +36,45 @@ ul {
 hr {
     padding: 0;
     width: 75%;
+    border-color: @main-color;
+    background-color: @main-color;
+}
+.navbar  {
+   background-color: @main-color;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   position: fixed;
+   text-align: center;
+   width: 100%;
+   padding-bottom: 25px;
+   top: 0;
+   left: 0;
+   height: auto;
+
+   .navbar-nav {
+       color: white;
+       margin-top: 30px;
+       text-align: center;
+       display: inline-block;
+  
+       .nav-item {
+           display: inline;
+           padding-left: 30px;
+           text-align: center;
+           color: white;
+           &:hover, &:active {color:@hover-color;}
+           text-decoration: none;
+
+           .nav-link {
+               text-decoration: none;
+               text-align: center;
+               color: white;
+               background-color: @main-color;
+
+           }
+       }
+   }
 }
 
 .education li {
@@ -197,3 +206,21 @@ hr {
     border: 1px solid #f3f3f3;
     }
 
+.nav-item {
+        color: @main-color;
+        text-decoration: none;
+        &:hover, &:active {color:@hover-color;}
+    }
+
+.projects{
+    padding-left: 14em;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
