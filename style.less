@@ -122,12 +122,12 @@ hr {
     }
 
     label {
-    display: inline-block;
+    display: block;
     width: 90px;
     color: white;
     font-size: 0.75em;
-    background-color: @main-color;
     text-align: left;
+    padding-right: 100em;
     }
 
     input, textarea {
@@ -166,6 +166,7 @@ hr {
     border: 1px solid grey;
     .border-radius;
     font-size: 100%;
+    margin-bottom: 10em;
     }
 
     ::-webkit-input-placeholder {
@@ -236,4 +237,8 @@ hr {
   font-family: 'lab3';
   src:  url('lab3.woff2') format('woff2'),
         url('lab3.woff') format('woff');
+}
+
+.form-control{
+    margin-bottom: 10px;
 }
