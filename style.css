@@ -103,6 +103,7 @@ label {
   color: white;
   font-size: 0.75em;
   background-color: #11480B;
+  text-align: left;
 }
 input,
 textarea {
@@ -130,7 +131,7 @@ textarea {
   text-align: center;
 }
 button {
-  width: 200px;
+  width: 100%;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: #a3c5cf;
